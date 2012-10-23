@@ -1,0 +1,6 @@
+*.py[co]
+.idea
+build
+_build
+dist
+MANIFEST
