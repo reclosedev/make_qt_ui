@@ -1,7 +1,7 @@
 make_qt_ui
 ----------
 
-Simplify conversion of \*.ui and \*.qrc files from PySide/PyQt to Python
+Simplifies conversion of \*.ui and \*.qrc files from PySide/PyQt to Python
 on \*nix and Windows.
 
 Installation
@@ -32,7 +32,7 @@ If you want to convert all \*.ui and \*.qrc files in some directory, type in con
     
 Also `make_qt_ui` can constantly convert changed files in directory::
 
-    $ make_pyqt_ui --watch some_directory --inteval 5
+    $ make_pyqt_ui --watch some_directory --interval 5
 
 When `make_pyqt_ui` or `make_pyside_ui` launched without pointing to target
 directory it will try to convert files in current `'./'` and `'./ui'` directories. 
