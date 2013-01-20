@@ -1,14 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup
+
 
 setup(
     name='make_qt_ui',
     packages=['make_qt_ui'],
-    scripts=['scripts/make_pyqt_ui.py', 'scripts/make_pyside_ui.py'],
+    entry_points = {
+        'console_scripts': [
+            'make_pyqt_ui = make_qt_ui:make_pyqt',
+            'make_pyside_ui = make_qt_ui:make_pyside',
+        ],
+    },
     version='0.1.0',
     description='Scripts to simplify conversion of *.ui and *.qrc files to Python',
     author='Roman Haritonov',
